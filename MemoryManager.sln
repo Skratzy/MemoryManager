@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MemoryManager", "MemoryManager\MemoryManager.vcxproj", "{0803FBE9-F6B6-4BFC-9C42-E099DA35DF8F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MemoryManager", "MemoryManager\MemoryManager.vcxproj", "{8143A7E6-A2B0-44FE-9C8D-E444B4C8B55D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0803FBE9-F6B6-4BFC-9C42-E099DA35DF8F}.Debug|x64.ActiveCfg = Debug|x64
-		{0803FBE9-F6B6-4BFC-9C42-E099DA35DF8F}.Debug|x64.Build.0 = Debug|x64
-		{0803FBE9-F6B6-4BFC-9C42-E099DA35DF8F}.Debug|x86.ActiveCfg = Debug|Win32
-		{0803FBE9-F6B6-4BFC-9C42-E099DA35DF8F}.Debug|x86.Build.0 = Debug|Win32
-		{0803FBE9-F6B6-4BFC-9C42-E099DA35DF8F}.Release|x64.ActiveCfg = Release|x64
-		{0803FBE9-F6B6-4BFC-9C42-E099DA35DF8F}.Release|x64.Build.0 = Release|x64
-		{0803FBE9-F6B6-4BFC-9C42-E099DA35DF8F}.Release|x86.ActiveCfg = Release|Win32
-		{0803FBE9-F6B6-4BFC-9C42-E099DA35DF8F}.Release|x86.Build.0 = Release|Win32
+		{8143A7E6-A2B0-44FE-9C8D-E444B4C8B55D}.Debug|x64.ActiveCfg = Debug|x64
+		{8143A7E6-A2B0-44FE-9C8D-E444B4C8B55D}.Debug|x64.Build.0 = Debug|x64
+		{8143A7E6-A2B0-44FE-9C8D-E444B4C8B55D}.Debug|x86.ActiveCfg = Debug|Win32
+		{8143A7E6-A2B0-44FE-9C8D-E444B4C8B55D}.Debug|x86.Build.0 = Debug|Win32
+		{8143A7E6-A2B0-44FE-9C8D-E444B4C8B55D}.Release|x64.ActiveCfg = Release|x64
+		{8143A7E6-A2B0-44FE-9C8D-E444B4C8B55D}.Release|x64.Build.0 = Release|x64
+		{8143A7E6-A2B0-44FE-9C8D-E444B4C8B55D}.Release|x86.ActiveCfg = Release|Win32
+		{8143A7E6-A2B0-44FE-9C8D-E444B4C8B55D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
