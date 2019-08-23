@@ -64,7 +64,10 @@ void TestCases::poolAllocDealloc() {
 
 		srand(static_cast<unsigned int>(time(0)));
 		std::vector<void*> poolPointers;
-		while (true) {
+
+		auto end = std::chrono::high_resolution_clock::now() + std::chrono::milliseconds(500);
+
+		while (std::chrono::high_resolution_clock::now() < end) {
 			// Try-catch clause to catch any overflow-throws
 			try {
 				// "40%" chance of allocating from the pool
@@ -92,9 +95,8 @@ void TestCases::poolAllocDealloc() {
 	std::thread t2(testFunc);
 	std::thread t3(testFunc);
 	std::thread t4(testFunc);
-	std::cout << "blah" << std::endl;
+
 	std::this_thread::sleep_for(std::chrono::seconds(1));
-	std::cout << "blah" << std::endl;
 
 	t1.join();
 	t2.join();
@@ -123,7 +125,10 @@ void TestCases::stackAllocDealloc() {
 
 		srand(static_cast<unsigned int>(time(0)));
 		std::vector<void*> poolPointers;
-		while (true) {
+
+		auto end = std::chrono::high_resolution_clock::now() + std::chrono::milliseconds(500);
+
+		while (std::chrono::high_resolution_clock::now() < end) {
 			// Try-catch clause to catch any overflow-throws
 			try {
 				// "90%" chance of allocating from the stack
