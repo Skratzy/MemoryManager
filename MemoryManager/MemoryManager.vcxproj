@@ -23,6 +23,8 @@
     <ClCompile Include="src\MemoryManager.cpp" />
     <ClCompile Include="src\PoolAllocator.cpp" />
     <ClCompile Include="src\StackAllocator.cpp" />
+    <ClCompile Include="src\tests\tests.cpp" />
+    <ClCompile Include="src\tests\TestCases.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Allocator.h" />
@@ -30,6 +32,7 @@
     <ClInclude Include="src\MemoryManager.h" />
     <ClInclude Include="src\PoolAllocator.h" />
     <ClInclude Include="src\StackAllocator.h" />
+    <ClInclude Include="src\tests\TestCases.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

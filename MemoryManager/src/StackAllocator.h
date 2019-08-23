@@ -1,5 +1,5 @@
-#ifndef STACK_ALLOCATOR
-#define STACK_ALLOCATOR
+#ifndef MEMNGR_STACK_ALLOCATOR
+#define MEMNGR_STACK_ALLOCATOR
 
 #include <atomic>
 
@@ -33,4 +33,4 @@ public: /// FUNCTIONS
 	float getUsedMemoryPercentage();
 };
 
-#endif //STACK_ALLOCATOR
+#endif //MEMNGR_STACK_ALLOCATOR

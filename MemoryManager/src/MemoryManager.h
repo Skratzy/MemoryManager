@@ -1,5 +1,5 @@
-#ifndef MEMORY_MANAGER
-#define MEMORY_MANAGER
+#ifndef MEMNGR_MEMORY_MANAGER
+#define MEMNGR_MEMORY_MANAGER
 
 #include <vector>
 
@@ -81,4 +81,4 @@ public: /// FUNCTIONS
 	void cleanUp();
 };
 
-#endif //MEMORY_MANAGER
+#endif //MEMNGR_MEMORY_MANAGER

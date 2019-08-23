@@ -1,5 +1,5 @@
-#ifndef POOL_ALLOCATOR
-#define POOL_ALLOCATOR
+#ifndef MEMNGR_POOL_ALLOCATOR
+#define MEMNGR_POOL_ALLOCATOR
 
 #include <deque>
 #include <atomic>
@@ -15,7 +15,7 @@ private: /// VARIABLES
 private: /// FUNCTIONS
 	std::deque<bool> m_entries;
 
-	size_t m_entrySize;
+	unsigned int m_entrySize;
 	unsigned int m_numEntries;
 	unsigned int m_quadrantSize;
 	unsigned int m_numQuadrants;
@@ -48,4 +48,4 @@ public: /// FUNCTIONS
 	void cleanUp();
 };
 
-#endif //POOL_ALLOCATOR
+#endif //MEMNGR_POOL_ALLOCATOR

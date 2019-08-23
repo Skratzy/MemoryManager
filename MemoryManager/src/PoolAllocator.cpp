@@ -12,15 +12,15 @@ int PoolAllocator::findFreeEntry(int quadrant) {
 	void* allocationAddress = m_quadFreeAddress.at(quadrant);
 
 	// Calculate corresponding entry number to the free address we're taking
-	unsigned int entryNum = static_cast<char*>(allocationAddress) - static_cast<char*>(m_memPtr);
+	unsigned int entryNum = static_cast<unsigned int>(static_cast<char*>(allocationAddress) - static_cast<char*>(m_memPtr));
 	entryNum = entryNum / m_entrySize;
 	returnValue = entryNum;
 	// Set that entry to 'allocated'
 	m_entries.at(entryNum) = true;
 
 	// 'startEntry' refers to the first entry IN THE QUADRANT
-	unsigned int startEntry = quadrant * m_entriesPerQuadrant;
-	unsigned int entryNumOffset = entryNum - startEntry;
+	size_t startEntry = quadrant * m_entriesPerQuadrant;
+	size_t entryNumOffset = entryNum - startEntry;
 
 	// Initialize to nullptr (no new entry found = full quadrant = return nullptr)
 	m_quadFreeAddress.at(quadrant) = nullptr;

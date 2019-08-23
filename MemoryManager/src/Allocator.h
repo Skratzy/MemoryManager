@@ -1,5 +1,5 @@
-#ifndef ALLOCATOR
-#define ALLOCATOR
+#ifndef MEMNGR_ALLOCATOR
+#define MEMNGR_ALLOCATOR
 
 #include <vector>
 
@@ -21,4 +21,4 @@ public:
 
 };
 
-#endif //ALLOCATOR
+#endif //MEMNGR_ALLOCATOR
