@@ -62,7 +62,7 @@ constexpr auto FUNCTION_STACK_INDEX = 1;
 		break; \
 	case 1:\
 		std::cerr << "ERROR: " << s << std::endl;\
-		abort();\
+		throw(s);\
 		break;\
 	default: break;\
 }}

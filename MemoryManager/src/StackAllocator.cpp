@@ -55,7 +55,7 @@ void* StackAllocator::allocate(unsigned int sizeBytes) {
 		ptrToStackTop = static_cast<char*>(m_memPtr) + currMarker;
 	}
 	else // Else if we're allocating past the max size of the stack
-		throw std::overflow_error("StackAllocator::allocate : Tried to allocate more memory than was available.");
+		MEMMNGR_DEBUG_MESSAGE("StackAllocator::allocate : Tried to allocate more memory than was available.", 1);
 
 	return ptrToStackTop;
 }

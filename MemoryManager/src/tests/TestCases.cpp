@@ -92,8 +92,9 @@ void TestCases::poolAllocDealloc() {
 	std::thread t2(testFunc);
 	std::thread t3(testFunc);
 	std::thread t4(testFunc);
-
+	std::cout << "blah" << std::endl;
 	std::this_thread::sleep_for(std::chrono::seconds(1));
+	std::cout << "blah" << std::endl;
 
 	t1.join();
 	t2.join();

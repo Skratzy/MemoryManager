@@ -68,7 +68,7 @@ void MemoryManager::init(const std::vector<StackInstance>& stackInstances, const
 	// Initializing each 'PoolInstance' into an actual pool in the memory manager
 	for (PoolInstance PI : poolInstances) {
 		if (PI.numEntries % PI.numQuadrants != 0)
-			throw std::exception(("The number of entries in PoolInstance " + std::to_string(currIndex) + " was not divisible with the number of quadrants.").c_str());
+			MEMMNGR_DEBUG_MESSAGE(("The number of entries in PoolInstance " + std::to_string(currIndex) + " was not divisible with the number of quadrants.").c_str(), 1);
 		// Inserting the pool into the 'm_pools' vector
 		addPool(PI);
 		// Creating 'vector<bool>' for memory tacking purposes
@@ -88,7 +88,6 @@ void * MemoryManager::stackAllocate(unsigned int sizeBytes, unsigned int indexOf
 	}
 	catch (std::exception& e) {
 		MEMMNGR_DEBUG_MESSAGE("MemoryManager::stackAllocate: " + std::string(e.what()), 1);
-		abort();
 	}
 
 }
@@ -104,7 +103,7 @@ void* MemoryManager::poolAllocate(unsigned int sizeBytes) {
 	}
 
 	if (ptrToAllocation == nullptr)
-		throw std::exception("MemoryManager::poolAllocate : No pool allocated for size " + sizeBytes);
+		MEMMNGR_DEBUG_MESSAGE("MemoryManager::poolAllocate : No pool allocated for size " + std::to_string(sizeBytes), 1);
 
 	return ptrToAllocation;
 }

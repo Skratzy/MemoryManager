@@ -1,6 +1,8 @@
 #include "Defines.h"
 #include "PoolAllocator.h"
 
+#include <string>
+
 /*+-+-+-+-+-+-+-+-+-+-+-+
 	PRIVATE FUNCTIONS
 +-+-+-+-+-+-+-+-+-+-+-+*/
@@ -59,7 +61,7 @@ PoolAllocator::PoolAllocator(void* memPtr, unsigned int entrySize, unsigned int 
 	: Allocator(memPtr, entrySize * numEntries) {
 	// Size of OBJECT + PADDING must be a multiple of 4 (32-bit) or 8 (64-bit)
 	if (m_entrySize % ARCH_BYTESIZE != 0)
-		throw std::exception("PoolAllocator::PoolAllocator(): Entry size was not a multiple of " + ARCH_BYTESIZE);
+		MEMMNGR_DEBUG_MESSAGE("PoolAllocator::PoolAllocator(): Entry size was not a multiple of " + std::to_string(ARCH_BYTESIZE), 1);
 
 	m_entrySize = entrySize;
 	m_numEntries = numEntries;
