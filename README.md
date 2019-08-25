@@ -1,4 +1,4 @@
-# MemoryManager
+# MiniMM
 
 A memory manager maintained as a hobby project. Hit me up if you happen to find any issues.
 
