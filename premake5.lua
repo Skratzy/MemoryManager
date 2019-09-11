@@ -25,3 +25,6 @@ project "MemoryManager"
 		
 	filter { "system:windows", "configurations:Release" }
 		buildoptions "/MT"
+
+	filter "configurations:Debug"
+		defines { "_DEBUG", "_ITERATOR_DEBUG_LEVEL=2" }
